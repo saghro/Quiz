@@ -1,0 +1,33 @@
+[
+    {
+    "qst" : "What does HTML stand for?",
+    "choix1":"Hyperlinks and Text Harpu languge",
+    "choix2":"Homd Tool Markup Language ",
+    "choix3":"Hyper Text Markup Language",
+    "choix4":"Hyperlinks and Text Markup languge",
+    correct:"choix3"
+   },
+   {
+    "qst":"Who is making the Web standards?",
+    "choix1":"The World Wide Web Consortium",
+    "choix2":"Google",
+    "choix3":"Microsoft",
+    "choix4":"Mozilla",
+    correct:"choix4"
+     },
+   {
+    "qst":"Choose the correct HTML element for the largest heading:",
+    "choix1":"<h6>",
+    "choix2":"<heading>",
+    "choix3":"<h1>",
+    "choix4":"<head>",
+    correct:"choix2"   },
+   {
+    "qst":"What is the correct HTML element for inserting a line break?",
+    "choix1":"<br>",
+    "choix2":"<lb>",
+    "choix3":"<break>",
+    "choix4":"<h1>",
+    correct:"choix1" 
+    }
+ ]
