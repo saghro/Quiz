@@ -39,3 +39,48 @@ const cnt_b = document.getElementById('cnt_b')
 const cnt_c = document.getElementById('cnt_c')
 const cnt_d = document.getElementById('cnt_d')
 const nextbnt = document.getElementById('btn')
+let current = 0;
+let score = 0;
+loadQuiz()
+
+function loadQuiz() {
+    const currentQuizdata = quizD[current]
+    question.innerText = currentQuizdata.qst
+    cnt_a.innerText = currentQuizdata.choix1
+    cnt_b.innerText = currentQuizdata.choix2
+    cnt_c.innerText = currentQuizdata.choix3
+    cnt_d.innerText = currentQuizdata.choix4
+
+}
+
+function deselectAnswer() {
+    repp.forEach(repp => repp.checked = false)
+
+}
+
+function getSelected() {
+    let rep
+    repp.forEach(repp => {
+        if (repp.checked) {
+            rep = repp.id
+
+        }
+    })
+    return rep
+}
+btn.addEventListener('click', () => {
+    const correct = getSelected()
+    if (correct) {
+        if (correct === quizD[current].correct) {
+            score++
+        }
+        current++
+    }
+    if (current < quizD.length) {
+        loadQuiz()
+
+    } else {
+        quiz.innerHTML
+    }
+
+})
